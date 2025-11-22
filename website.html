@@ -1,9 +1,336 @@
-<h1>Hello from CodePipeline!</h1>
-<h3>Anyone can transition to DevOps. The steps are: </h3>
-<ol>
-    <li>Trust the process</li>
-    <li>Work hard </li>
-    <li>Be consistent</li>
-    <li>Stay Hungry</li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Will Soto — Cloud DevOps Engineer</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px 50px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .header {
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+    }
+    .full-name {
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .first-name { margin-right: 6px; }
+    .position {
+      font-size: 18px;
+      font-weight: 700;
+      display: block;
+      margin-top: 8px;
+    }
+    .contact-info {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+    .contact-info .separator {
+      display: inline-block;
+      width: 8px;
+    }
+    .about {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .details { font-size: 14px; color: #333; }
+    .section {
+      margin-bottom: 22px;
+    }
+    .section__title {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+    .section__list-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .section__list-item .left {
+      width: 55%;
+    }
+    .section__list-item .right {
+      width: 40%;
+      text-align: right;
+    }
+    .section__list-item .name {
+      font-weight: 700;
+    }
+    .section__list-item .addr,
+    .section__list-item .duration {
+      color: #777;
+      font-size: 13px;
+    }
+    .section__list-item .text,
+    .section__list-item .desc {
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+    .skills {
+      margin-top: 6px;
+    }
+    .skills__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .skills__item .name {
+      font-weight: 700;
+    }
+    .skills__item input[type="checkbox"] {
+      display: none;
+    }
+    .skills__item label {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+      border: 1px solid #aaa;
+      margin-left: 3px;
+    }
+    .skills__item input[type="checkbox"]:checked + label {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="full-name">
+        <span class="first-name">Will</span>
+        <span class="last-name">Soto</span>
+      </div>
+      <div class="contact-info">
+        <span class="email">Email: </span>
+        <span class="email-val">wsoto12@wgu.edu</span>
+        <span class="separator"></span>
+        <span class="phone">Phone: </span>
+        <span class="phone-val">111-222-3333</span>
+      </div>
+      <div class="about">
+        <span class="position">Cloud DevOps Engineer</span>
+        <span class="desc">
+          Cloud DevOps Engineer focused on AWS, automation, and highly available architectures.
+          I design and deploy real-world lab projects that mirror production environments:
+          load-balanced web tiers, Infrastructure-as-Code, CI/CD pipelines, and least-privilege security patterns.
+        </span>
+      </div>
+    </div>
 
-</ol>
+    <div class="details">
+
+      <!-- Experience -->
+      <div class="section">
+        <div class="section__title">Experience</div>
+        <div class="section__list">
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name">Cloud DevOps Engineer</div>
+              <div class="addr">Hands-on AWS Lab & Portfolio Projects</div>
+              <div class="duration">2024 – Present</div>
+            </div>
+            <div class="right">
+              <div class="desc">
+                Building end-to-end AWS solutions: VPC design, ALB + Auto Scaling, RDS, DynamoDB,
+                CloudFormation, and CodePipeline. Focused on secure, repeatable, and observable architectures.
+              </div>
+            </div>
+          </div>
+
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name">Real Estate Professional</div>
+              <div class="addr">RI & MA</div>
+              <div class="duration">2019 – Present</div>
+            </div>
+            <div class="right">
+              <div class="desc">
+                Managed complex transactions, negotiations, and client relationships while developing
+                strong communication, documentation, and problem-solving skills used daily in DevOps work.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="section">
+        <div class="section__title">Education</div>
+        <div class="section__list">
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name">Western Governors University</div>
+              <div class="addr">B.S. — Cloud Computing (AWS Track)</div>
+              <div class="duration">In Progress</div>
+            </div>
+            <div class="right">
+              <div class="desc">
+                Coursework and labs focused on AWS architecture, Linux, networking, scripting,
+                and DevOps practices aligned to industry certifications.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <div class="section__title">Projects</div>
+        <div class="section__list">
+
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name">DynamoDB Read-Only Access from EC2 — 3 Ways</div>
+              <div class="duration">Console · CLI · CloudFormation</div>
+            </div>
+            <div class="right">
+              <div class="text">
+                Designed a least-privilege pattern for querying DynamoDB from EC2 with no stored
+                credentials. Deployed the same architecture three times (Console, CLI, IaC) to prove
+                repeatability and enforce read-only access with IAM roles and instance profiles.
+              </div>
+            </div>
+          </div>
+
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name">Adventure Works — Two-Tier Joomla Architecture</div>
+              <div class="duration">ALB · Auto Scaling · RDS</div>
+            </div>
+            <div class="right">
+              <div class="text">
+                Built a production-style web + database tier for Joomla CMS using a custom VPC,
+                public/private subnets, Application Load Balancer, Auto Scaling Group, and RDS MySQL.
+                Automated web-tier bootstrap with user-data and validated scaling with CloudWatch alarms.
+              </div>
+            </div>
+          </div>
+
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name">Aurora Digital — CloudFormation Web Stack</div>
+              <div class="duration">Infrastructure as Code</div>
+            </div>
+            <div class="right">
+              <div class="text">
+                Authored a single CloudFormation template that provisions VPC networking, ALB, security
+                groups, Auto Scaling Group, and branded Apache instances. Achieved a highly available
+                web tier where all access flows through the ALB only.
+              </div>
+            </div>
+          </div>
+
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name">Cloud Financial — Auto Scaling + EFS</div>
+              <div class="duration">Fault-Tolerant Web Tier</div>
+            </div>
+            <div class="right">
+              <div class="text">
+                Implemented an Auto Scaling web architecture using EFS for shared storage across
+                instances. Validated scale-in/out behavior, EFS mounts, and security-group chaining
+                to keep ALB, web, and storage layers isolated but integrated.
+              </div>
+            </div>
+          </div>
+
+          <div class="section__list-item">
+            <div class="left">
+              <div class="name">CloudBank — AWS CLI-Only EC2 & Auto Scaling</div>
+              <div class="duration">EC2 · AMI · ASG · CloudWatch</div>
+            </div>
+            <div class="right">
+              <div class="text">
+                Automated an entire EC2 lifecycle from the Mac terminal: launched a web server with
+                user-data, created a reusable AMI, built a Launch Template and Auto Scaling Group,
+                and wired CloudWatch alarms for CPU-based scaling — all via AWS CLI commands.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="section">
+        <div class="section__title">Skills</div>
+        <div class="skills">
+
+          <div class="skills__item">
+            <div class="left">
+              <div class="name">AWS (EC2, VPC, ALB, RDS, DynamoDB, CloudFormation)</div>
+            </div>
+            <div class="right">
+              <input id="aws1" type="checkbox" checked><label for="aws1"></label>
+              <input id="aws2" type="checkbox" checked><label for="aws2"></label>
+              <input id="aws3" type="checkbox" checked><label for="aws3"></label>
+              <input id="aws4" type="checkbox" checked><label for="aws4"></label>
+              <input id="aws5" type="checkbox"><label for="aws5"></label>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="left">
+              <div class="name">Linux · Networking · Bash</div>
+            </div>
+            <div class="right">
+              <input id="linux1" type="checkbox" checked><label for="linux1"></label>
+              <input id="linux2" type="checkbox" checked><label for="linux2"></label>
+              <input id="linux3" type="checkbox" checked><label for="linux3"></label>
+              <input id="linux4" type="checkbox"><label for="linux4"></label>
+              <input id="linux5" type="checkbox"><label for="linux5"></label>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="left">
+              <div class="name">CI/CD · Automation · GitHub</div>
+            </div>
+            <div class="right">
+              <input id="cicd1" type="checkbox" checked><label for="cicd1"></label>
+              <input id="cicd2" type="checkbox" checked><label for="cicd2"></label>
+              <input id="cicd3" type="checkbox"><label for="cicd3"></label>
+              <input id="cicd4" type="checkbox"><label for="cicd4"></label>
+              <input id="cicd5" type="checkbox"><label for="cicd5"></label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Interests -->
+      <div class="section">
+        <div class="section__title">Interests</div>
+        <div class="section__list">
+          <div class="section__list-item">
+            Continuous learning, cloud architecture, real estate investing, travel, and helping
+            others transition into tech.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
