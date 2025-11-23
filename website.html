@@ -1,336 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Will Soto — Cloud DevOps Engineer</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8" />
+  <title>Will A. Soto — Cloud DevOps Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
   <style>
-    body {
-      font-family: 'Lato', sans-serif;
-      background: #f4f4f4;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+    body {
+      font-family: "Lato", sans-serif;
+      background: #f5f5f5;
+      color: #333;
     }
     .container {
       max-width: 900px;
       margin: 40px auto;
       background: #ffffff;
-      padding: 40px 50px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      padding: 40px 32px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
     .header {
       border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 20px;
-      margin-bottom: 25px;
+      padding-bottom: 18px;
+      margin-bottom: 24px;
     }
     .full-name {
-      font-size: 32px;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .first-name {
+      font-weight: 300;
+      margin-right: 4px;
+    }
+    .last-name {
+      font-weight: 700;
+    }
+    .tagline {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .contact-info {
+      font-size: 13px;
+      color: #666;
+    }
+    .contact-info span {
+      margin-right: 10px;
+    }
+    .separator {
+      margin: 0 6px;
+      color: #b0b0b0;
+    }
+    .section {
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .section__title {
+      font-size: 16px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1px;
-    }
-    .first-name { margin-right: 6px; }
-    .position {
-      font-size: 18px;
-      font-weight: 700;
-      display: block;
-      margin-top: 8px;
-    }
-    .contact-info {
-      margin-top: 10px;
-      font-size: 14px;
-      color: #555;
-    }
-    .contact-info .separator {
-      display: inline-block;
-      width: 8px;
-    }
-    .about {
-      margin-top: 15px;
-      font-size: 14px;
-      line-height: 1.6;
-      color: #333;
-    }
-    .details { font-size: 14px; color: #333; }
-    .section {
-      margin-bottom: 22px;
-    }
-    .section__title {
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 15px;
-      margin-bottom: 8px;
-    }
-    .section__list-item {
-      display: flex;
-      justify-content: space-between;
       margin-bottom: 10px;
     }
-    .section__list-item .left {
-      width: 55%;
-    }
-    .section__list-item .right {
-      width: 40%;
-      text-align: right;
-    }
-    .section__list-item .name {
-      font-weight: 700;
-    }
-    .section__list-item .addr,
-    .section__list-item .duration {
-      color: #777;
-      font-size: 13px;
-    }
-    .section__list-item .text,
-    .section__list-item .desc {
-      margin-top: 4px;
-      line-height: 1.5;
-    }
-    .skills {
-      margin-top: 6px;
-    }
-    .skills__item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .section__body p {
       margin-bottom: 8px;
     }
-    .skills__item .name {
+    .item {
+      margin-bottom: 10px;
+    }
+    .item-title {
       font-weight: 700;
+      margin-bottom: 2px;
     }
-    .skills__item input[type="checkbox"] {
-      display: none;
+    .item-subtitle {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 4px;
     }
-    .skills__item label {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      border-radius: 2px;
-      border: 1px solid #aaa;
-      margin-left: 3px;
+    .item-text {
+      font-size: 14px;
+      color: #444;
     }
-    .skills__item input[type="checkbox"]:checked + label {
-      background: #333;
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px auto;
+        padding: 24px 18px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- HEADER -->
     <div class="header">
       <div class="full-name">
-        <span class="first-name">Will</span>
+        <span class="first-name">Will A.</span>
         <span class="last-name">Soto</span>
       </div>
+      <div class="tagline">Cloud DevOps Engineer ☁️</div>
       <div class="contact-info">
-        <span class="email">Email: </span>
-        <span class="email-val">wsoto12@wgu.edu</span>
-        <span class="separator"></span>
-        <span class="phone">Phone: </span>
-        <span class="phone-val">111-222-3333</span>
-      </div>
-      <div class="about">
-        <span class="position">Cloud DevOps Engineer</span>
-        <span class="desc">
-          Cloud DevOps Engineer focused on AWS, automation, and highly available architectures.
-          I design and deploy real-world lab projects that mirror production environments:
-          load-balanced web tiers, Infrastructure-as-Code, CI/CD pipelines, and least-privilege security patterns.
-        </span>
+        <span>Email: wsoto12@wgu.edu</span>
+        <span class="separator">|</span>
+        <span>GitHub: <a href="https://github.com/iamwillsoto" target="_blank">iamwillsoto</a></span>
       </div>
     </div>
 
-    <div class="details">
+    <!-- SUMMARY -->
+    <div class="section">
+      <div class="section__title">Summary</div>
+      <div class="section__body">
+        <p>
+          Cloud DevOps Engineer focused on building secure, scalable AWS architectures and automating deployments.
+          Hands-on experience with EC2, ALB, Auto Scaling, DynamoDB, RDS, EFS, CloudFormation, and CI/CD pipelines
+          for real-world, production-style use cases.
+        </p>
+      </div>
+    </div>
 
-      <!-- Experience -->
-      <div class="section">
-        <div class="section__title">Experience</div>
-        <div class="section__list">
-          <div class="section__list-item">
-            <div class="left">
-              <div class="name">Cloud DevOps Engineer</div>
-              <div class="addr">Hands-on AWS Lab & Portfolio Projects</div>
-              <div class="duration">2024 – Present</div>
-            </div>
-            <div class="right">
-              <div class="desc">
-                Building end-to-end AWS solutions: VPC design, ALB + Auto Scaling, RDS, DynamoDB,
-                CloudFormation, and CodePipeline. Focused on secure, repeatable, and observable architectures.
-              </div>
-            </div>
-          </div>
-
-          <div class="section__list-item">
-            <div class="left">
-              <div class="name">Real Estate Professional</div>
-              <div class="addr">RI & MA</div>
-              <div class="duration">2019 – Present</div>
-            </div>
-            <div class="right">
-              <div class="desc">
-                Managed complex transactions, negotiations, and client relationships while developing
-                strong communication, documentation, and problem-solving skills used daily in DevOps work.
-              </div>
-            </div>
+    <!-- EDUCATION -->
+    <div class="section">
+      <div class="section__title">Education</div>
+      <div class="section__body">
+        <div class="item">
+          <div class="item-title">Western Governors University</div>
+          <div class="item-subtitle">B.S. — Cloud Computing (AWS Track) — In Progress</div>
+          <div class="item-text">
+            Coursework and labs focused on AWS architecture, automation, networking, security, and DevOps practices.
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Education -->
-      <div class="section">
-        <div class="section__title">Education</div>
-        <div class="section__list">
-          <div class="section__list-item">
-            <div class="left">
-              <div class="name">Western Governors University</div>
-              <div class="addr">B.S. — Cloud Computing (AWS Track)</div>
-              <div class="duration">In Progress</div>
-            </div>
-            <div class="right">
-              <div class="desc">
-                Coursework and labs focused on AWS architecture, Linux, networking, scripting,
-                and DevOps practices aligned to industry certifications.
-              </div>
-            </div>
+    <!-- PROJECTS -->
+    <div class="section">
+      <div class="section__title">Projects</div>
+      <div class="section__body">
+
+        <div class="item">
+          <div class="item-title">DynamoDB Read-Only Access from EC2 — Three Ways</div>
+          <div class="item-subtitle">Console · AWS CLI · CloudFormation · IAM · EC2 · DynamoDB</div>
+          <div class="item-text">
+            Implemented a media catalog backed by DynamoDB with an EC2 instance restricted to read-only access.
+            Delivered the same architecture via console, CLI automation, and CloudFormation to enforce least privilege
+            and prove full reproducibility of the design.
           </div>
         </div>
-      </div>
 
-      <!-- Projects -->
-      <div class="section">
-        <div class="section__title">Projects</div>
-        <div class="section__list">
-
-          <div class="section__list-item">
-            <div class="left">
-              <div class="name">DynamoDB Read-Only Access from EC2 — 3 Ways</div>
-              <div class="duration">Console · CLI · CloudFormation</div>
-            </div>
-            <div class="right">
-              <div class="text">
-                Designed a least-privilege pattern for querying DynamoDB from EC2 with no stored
-                credentials. Deployed the same architecture three times (Console, CLI, IaC) to prove
-                repeatability and enforce read-only access with IAM roles and instance profiles.
-              </div>
-            </div>
-          </div>
-
-          <div class="section__list-item">
-            <div class="left">
-              <div class="name">Adventure Works — Two-Tier Joomla Architecture</div>
-              <div class="duration">ALB · Auto Scaling · RDS</div>
-            </div>
-            <div class="right">
-              <div class="text">
-                Built a production-style web + database tier for Joomla CMS using a custom VPC,
-                public/private subnets, Application Load Balancer, Auto Scaling Group, and RDS MySQL.
-                Automated web-tier bootstrap with user-data and validated scaling with CloudWatch alarms.
-              </div>
-            </div>
-          </div>
-
-          <div class="section__list-item">
-            <div class="left">
-              <div class="name">Aurora Digital — CloudFormation Web Stack</div>
-              <div class="duration">Infrastructure as Code</div>
-            </div>
-            <div class="right">
-              <div class="text">
-                Authored a single CloudFormation template that provisions VPC networking, ALB, security
-                groups, Auto Scaling Group, and branded Apache instances. Achieved a highly available
-                web tier where all access flows through the ALB only.
-              </div>
-            </div>
-          </div>
-
-          <div class="section__list-item">
-            <div class="left">
-              <div class="name">Cloud Financial — Auto Scaling + EFS</div>
-              <div class="duration">Fault-Tolerant Web Tier</div>
-            </div>
-            <div class="right">
-              <div class="text">
-                Implemented an Auto Scaling web architecture using EFS for shared storage across
-                instances. Validated scale-in/out behavior, EFS mounts, and security-group chaining
-                to keep ALB, web, and storage layers isolated but integrated.
-              </div>
-            </div>
-          </div>
-
-          <div class="section__list-item">
-            <div class="left">
-              <div class="name">CloudBank — AWS CLI-Only EC2 & Auto Scaling</div>
-              <div class="duration">EC2 · AMI · ASG · CloudWatch</div>
-            </div>
-            <div class="right">
-              <div class="text">
-                Automated an entire EC2 lifecycle from the Mac terminal: launched a web server with
-                user-data, created a reusable AMI, built a Launch Template and Auto Scaling Group,
-                and wired CloudWatch alarms for CPU-based scaling — all via AWS CLI commands.
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Skills -->
-      <div class="section">
-        <div class="section__title">Skills</div>
-        <div class="skills">
-
-          <div class="skills__item">
-            <div class="left">
-              <div class="name">AWS (EC2, VPC, ALB, RDS, DynamoDB, CloudFormation)</div>
-            </div>
-            <div class="right">
-              <input id="aws1" type="checkbox" checked><label for="aws1"></label>
-              <input id="aws2" type="checkbox" checked><label for="aws2"></label>
-              <input id="aws3" type="checkbox" checked><label for="aws3"></label>
-              <input id="aws4" type="checkbox" checked><label for="aws4"></label>
-              <input id="aws5" type="checkbox"><label for="aws5"></label>
-            </div>
-          </div>
-
-          <div class="skills__item">
-            <div class="left">
-              <div class="name">Linux · Networking · Bash</div>
-            </div>
-            <div class="right">
-              <input id="linux1" type="checkbox" checked><label for="linux1"></label>
-              <input id="linux2" type="checkbox" checked><label for="linux2"></label>
-              <input id="linux3" type="checkbox" checked><label for="linux3"></label>
-              <input id="linux4" type="checkbox"><label for="linux4"></label>
-              <input id="linux5" type="checkbox"><label for="linux5"></label>
-            </div>
-          </div>
-
-          <div class="skills__item">
-            <div class="left">
-              <div class="name">CI/CD · Automation · GitHub</div>
-            </div>
-            <div class="right">
-              <input id="cicd1" type="checkbox" checked><label for="cicd1"></label>
-              <input id="cicd2" type="checkbox" checked><label for="cicd2"></label>
-              <input id="cicd3" type="checkbox"><label for="cicd3"></label>
-              <input id="cicd4" type="checkbox"><label for="cicd4"></label>
-              <input id="cicd5" type="checkbox"><label for="cicd5"></label>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Interests -->
-      <div class="section">
-        <div class="section__title">Interests</div>
-        <div class="section__list">
-          <div class="section__list-item">
-            Continuous learning, cloud architecture, real estate investing, travel, and helping
-            others transition into tech.
+        <div class="item">
+          <div class="item-title">Adventure Works — Two-Tier Architecture with ALB, Auto Scaling & RDS (Joomla)</div>
+          <div class="item-subtitle">ALB · Auto Scaling · RDS · EC2 · VPC</div>
+          <div class="item-text">
+            Built a two-tier web architecture for a travel agency using an Application Load Balancer, Auto Scaling Group,
+            and RDS-backed Joomla CMS. Separated web and database tiers for security, fault tolerance, and performance.
           </div>
         </div>
-      </div>
 
+        <div class="item">
+          <div class="item-title">Aurora Digital — CloudFormation Web Stack</div>
+          <div class="item-subtitle">CloudFormation · ALB · Auto Scaling · VPC</div>
+          <div class="item-text">
+            Provisioned a complete highly available web tier using a single CloudFormation template, including VPC,
+            public subnets, ALB, Auto Scaling Group, and Apache web servers. All instances are reachable only through
+            the load balancer for improved security.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Cloud Financial — Auto Scaling with Shared Storage (EFS)</div>
+          <div class="item-subtitle">EC2 · Auto Scaling · ALB · EFS · CloudWatch</div>
+          <div class="item-text">
+            Designed a fault-tolerant web environment using Auto Scaling and an Application Load Balancer, backed by EFS
+            for shared, persistent storage. Validated scaling behavior and ensured all instances served content from a
+            common file system.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-title">CloudBank — EC2, AMI, Auto Scaling & CloudWatch via CLI</div>
+          <div class="item-subtitle">AWS CLI · EC2 · AMI · Auto Scaling · CloudWatch</div>
+          <div class="item-text">
+            Automated end-to-end deployment from the terminal: launched an EC2 web server, created a reusable AMI,
+            configured a Launch Template and Auto Scaling Group, and wired CloudWatch alarms to drive scaling — all
+            without using the AWS console for provisioning.
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </body>
 </html>
+
